@@ -60,9 +60,7 @@ module.exports = {
 
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
-    publicPath: "/public/",
     watchContentBase: true,
     open: true,
-    hot: true,
   },
 };
