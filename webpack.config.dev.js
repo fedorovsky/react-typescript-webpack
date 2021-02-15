@@ -1,10 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-var babelOptions = {
-  presets: ["@babel/preset-env", "@babel/preset-react"],
-};
-
 module.exports = {
   mode: "development",
   devtool: "source-map",
