@@ -1,9 +1,12 @@
 import * as React from "react";
+import JavaScript from './components/JavaScript';
+import TypeScript from './components/TypeScript';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <JavaScript />
+      <TypeScript />
     </div>
   );
 };

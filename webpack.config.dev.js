@@ -5,9 +5,10 @@ module.exports = {
   mode: "development",
   devtool: "source-map",
   target: "web",
+  context: path.join(__dirname, 'src'),
 
   resolve: {
-    extensions: [".ts", ".tsx", ".js"],
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
 
   entry: {
@@ -36,7 +37,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.js$/,
+        test: /\.js(x?)$/,
         exclude: /node_modules/,
         use: [
           {

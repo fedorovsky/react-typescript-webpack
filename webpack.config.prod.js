@@ -4,9 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "production",
   devtool: "source-map",
+  context: path.join(__dirname, 'src'),
 
   resolve: {
-    extensions: [".ts", ".tsx", ".js"],
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
 
   entry: {
@@ -35,7 +36,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.js$/,
+        test: /\.js(x?)$/,
         exclude: /node_modules/,
         use: [
           {
