@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const JavaScript = () => {
   return (
-    <div>JavaScript</div>
+    <div>JavaScript Component</div>
   )
 }
 
