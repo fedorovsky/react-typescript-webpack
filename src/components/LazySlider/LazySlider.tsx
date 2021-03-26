@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as Styled from './LazySlider.styled';
 
-const Slider = React.lazy(() => import('../Slider'));
+const Slider = React.lazy(() => import('./Slider'));
 
 const LazySlider = () => {
   const [isVisibleSlider, setVisibleSlider] = React.useState(false);
