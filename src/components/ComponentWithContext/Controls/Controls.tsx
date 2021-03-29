@@ -5,12 +5,14 @@ import Context from '../Context';
 const Controls = () => {
   const { dispatch } = React.useContext(Context);
 
-  return (
-    <div>
-      <button onClick={() => dispatch(increment())}>increment</button>
-      <button onClick={() => dispatch(decrement())}>decrement</button>
-    </div>
-  );
+  return React.useMemo(() => {
+    return (
+      <div>
+        <button onClick={() => dispatch(increment())}>increment</button>
+        <button onClick={() => dispatch(decrement())}>decrement</button>
+      </div>
+    );
+  }, [dispatch]);
 };
 
-export default Controls;
+export default React.memo(Controls);
