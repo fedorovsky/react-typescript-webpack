@@ -1,7 +1,7 @@
 import * as React from 'react';
-import JavaScript from './components/JavaScript';
-import TypeScript from './components/TypeScript';
-import ComponentWithContext from './components/ComponentWithContext';
+import JavaScript from 'components/JavaScript';
+import TypeScript from 'components/TypeScript';
+import ComponentWithContext from 'components/ComponentWithContext';
 
 const App = () => {
   return (
